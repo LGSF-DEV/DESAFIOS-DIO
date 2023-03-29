@@ -5,11 +5,11 @@ public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello, World!");
         Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+        Scanner SC = new Scanner(System.in);
         System.out.print("Digite o 1° nome: ");
-        String primeiroNome = sc.nextLine();
+        String primeiroNome = SC.nextLine();
         System.out.print("Digite o 2° nome: ");
-        String segundoNome = sc.nextLine();
+        String segundoNome = SC.nextLine();
 
         String nomeCompleto = nomeCompleto(primeiroNome, segundoNome);
         System.out.printf("Nome Completo: %s",nomeCompleto);
