@@ -1,3 +1,4 @@
+package edu.lucas.testes;
 import java.util.Scanner;
 import java.util.Locale;
 
