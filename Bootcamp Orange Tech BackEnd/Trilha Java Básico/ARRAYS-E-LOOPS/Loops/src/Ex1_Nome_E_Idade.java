@@ -16,7 +16,7 @@ public class Ex1_Nome_E_Idade {
             System.out.print("Digite a idade: ");
             idade = sc.nextInt();
         }
-        sc.close();
         System.out.println("programa encerrado!");
+        sc.close();
     }
 }

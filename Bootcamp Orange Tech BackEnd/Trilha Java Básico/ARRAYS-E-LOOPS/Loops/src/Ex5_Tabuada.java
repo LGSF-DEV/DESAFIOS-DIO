@@ -17,9 +17,9 @@ public class Ex5_Tabuada {
             System.out.println();
             System.out.printf("%d X %d = %d",tabuada, i, resultado);
         }
-        sc.close();
         System.out.println();
         System.out.print("Fim do programa!");
+        sc.close();
     }
     
 }

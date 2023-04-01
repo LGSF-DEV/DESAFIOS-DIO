@@ -23,8 +23,8 @@ public class Ex4_Par_E_Impar {
             }
             count += 1;
         } while (count < quant_numeros);
-        sc.close();
         System.out.printf("Quantidade de números pares: %d%n", quant_pares);
         System.out.printf("Quantidade de números impares %d%n",quant_impares);
+        sc.close();
     }
 }
