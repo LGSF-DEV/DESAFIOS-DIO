@@ -15,6 +15,7 @@ public class Ex2_Nota {
             System.out.print("Nota Inválid! Digite Novamente: ");
             nota = sc.nextInt(); 
         }
+        sc.close();
         System.out.println("programa encerrado!");
     }
 }

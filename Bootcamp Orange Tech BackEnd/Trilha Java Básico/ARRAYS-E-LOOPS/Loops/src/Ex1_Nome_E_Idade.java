@@ -10,12 +10,13 @@ public class Ex1_Nome_E_Idade {
         while(true){
             System.out.print("Digite o nome: ");
             nome = sc.next();
-            if(nome.equals("0")) break;
-
+            if(nome.equals("0")){
+                break;
+            }
             System.out.print("Digite a idade: ");
             idade = sc.nextInt();
         }
-
+        sc.close();
         System.out.println("programa encerrado!");
     }
 }
