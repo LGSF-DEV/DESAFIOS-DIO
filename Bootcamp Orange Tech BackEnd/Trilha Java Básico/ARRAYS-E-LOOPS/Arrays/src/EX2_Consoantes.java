@@ -17,7 +17,7 @@ public class EX2_Consoantes {
             if(!(letra.equalsIgnoreCase("a") ||
                 letra.equalsIgnoreCase("e") ||
                 letra.equalsIgnoreCase("i") ||
-                letra.equalsIgnoreCase("0") ||
+                letra.equalsIgnoreCase("o") ||
                 letra.equalsIgnoreCase("u"))){
                 consoantes[count] = letra;
                 quant_consoantes = quant_consoantes + 1;
@@ -31,6 +31,7 @@ public class EX2_Consoantes {
                 System.out.printf("%s%n",consoante);
             }
         }
+        System.out.printf("Quantidade de consoantes: %d%n",quant_consoantes);
         sc.close();
     }
 }
