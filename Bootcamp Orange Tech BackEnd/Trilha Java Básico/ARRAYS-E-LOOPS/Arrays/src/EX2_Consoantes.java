@@ -25,10 +25,10 @@ public class EX2_Consoantes {
             count++;
         } while (count < consoantes.length);
         
-        System.out.println("Consoantes: ");
+        System.out.print("Consoantes: ");
         for (String consoante :consoantes) {
             if(consoante != null) {
-                System.out.printf("%s%n",consoante);
+                System.out.printf("%s ",consoante);
             }
         }
         System.out.printf("Quantidade de consoantes: %d%n",quant_consoantes);
