@@ -1,5 +1,4 @@
 import java.util.Random;
-
 public class Ex4_Array_Multidimensional {
     public static void main(String[] args) {
         Random random = new Random();
