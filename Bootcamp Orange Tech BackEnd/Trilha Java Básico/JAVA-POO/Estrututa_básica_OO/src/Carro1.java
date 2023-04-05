@@ -1,16 +1,16 @@
 
-class Carro {
+class Carro1 {
 
     String cor;
     String modelo;
     int capacidadeTanque;
 
     //Contrutor
-    Carro(){
+    Carro1(){
 
     }
 
-    Carro(String cor, String modelo, int capacidadeTanque){
+    Carro1(String cor, String modelo, int capacidadeTanque){
         this.cor = cor;
         this.modelo = modelo;
         this.capacidadeTanque = capacidadeTanque;
