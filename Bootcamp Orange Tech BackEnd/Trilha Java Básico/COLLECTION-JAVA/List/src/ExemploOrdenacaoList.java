@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -32,7 +31,6 @@ public class ExemploOrdenacaoList {
         System.out.println();
 
         System.out.println("--\tOrdem Idade\t---");
-//        Collections.sort(meusGatos, new ComparatorIdade());
 
         System.out.println();
 
@@ -42,7 +40,6 @@ public class ExemploOrdenacaoList {
         System.out.println();
 
         System.out.println("--\tOrdem cor\t---");
-//        Collections.sort(meusGatos, new ComparatorCor());
 
         System.out.println();
 
@@ -52,7 +49,9 @@ public class ExemploOrdenacaoList {
         System.out.println();
 
         System.out.println("--\tOrdem Nome/Cor/Idade\t---");
-//        Collections.sort(meusGatos, new ComparatorNomeCorIdade());
+        
+        System.out.println();
+
         meusGatos.sort(new ComparatorNomeCorIdade());
         System.out.println(meusGatos);
     }
@@ -122,6 +121,5 @@ class ComparatorNomeCorIdade implements Comparator<Gato> {
         if(cor !=0) return cor;
 
         return Integer.compare(g1.getIdade(), g2.getIdade());
-
     }
 }

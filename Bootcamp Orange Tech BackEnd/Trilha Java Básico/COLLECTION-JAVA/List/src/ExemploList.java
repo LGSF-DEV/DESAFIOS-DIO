@@ -1,13 +1,10 @@
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-
 class ExemploList {
-    public static void main(String[] args) {
-// Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
-
+        public static void main(String[] args) {
+//      Dada uma lista com 7 notas de um aluno [7, 8.5, 9.3, 5, 7, 0, 3.6], faça:
 //      List notas = new ArrayList(); //antes do java 5
 //      List<Double> notas = new ArrayList<Double>(); //Generics(jdk 5) - Diamond Operator(jdk 7)
 //      ArrayList<Double> notas = new ArrayList<>();
@@ -21,7 +18,6 @@ class ExemploList {
         notas.remove(5d);
         System.out.println(notas);
 */
-
         System.out.println("Crie uma lista e adicione as sete notas: ");
 
         List<Double> notas = new ArrayList<Double>();
@@ -53,11 +49,10 @@ class ExemploList {
         System.out.println();
 
         System.out.println("Confira se a nota 5.0 está na lista: " + notas.contains(5d));
-
-/*      System.out.println("Exiba todas as notas na ordem em que foram informados: ");
+/*      
+        System.out.println("Exiba todas as notas na ordem em que foram informados: ");
         for (Double nota : notas) System.out.println(nota);
 */
-        
         System.out.println();
 
         System.out.println("Exiba a terceira nota adicionada: " + notas.get(2));
@@ -76,8 +71,8 @@ class ExemploList {
         Iterator<Double> iterator = notas.iterator();
         Double soma = 0d;
         while(iterator.hasNext()){
-            Double next = iterator.next();
-            soma += next;
+                Double next = iterator.next();
+                soma += next;
         }
         System.out.println("Exiba a soma dos valores: " + soma);
 
@@ -102,13 +97,12 @@ class ExemploList {
         System.out.println("Remova as notas menores que 7 e exiba a lista: ");
         Iterator<Double> iterator1 = notas.iterator();
         while(iterator1.hasNext()) {
-            Double next = iterator1.next();
-            if(next < 7) iterator1.remove();
+                Double next = iterator1.next();
+                if(next < 7) iterator1.remove();
         }
         System.out.println(notas);
         
         System.out.println();
-
 /*     
         System.out.println("Apague toda a lista");
         notas.clear();
@@ -116,13 +110,5 @@ class ExemploList {
 */
         System.out.println("Confira se a lista está vazia: " + notas.isEmpty());
 
-/*
-        Para você: Resolva esses exercícios utilizando os métodos da implementação LinkedList:
-        System.out.println("Crie uma lista chamada notas2 " +
-        "e coloque todos os elementos da list Arraylist nessa nova lista: ");
-        System.out.println("Mostre a primeira nota da nova lista sem removê-lo: ");
-        System.out.println("Mostre a primeira nota da nova lista removendo-o: ");
-*/
-
-    }
+        }
 }
