@@ -23,19 +23,27 @@ public class ExercicioProposto2 {
         );
         for (LinguagemFavorita linguagem : minhasLinguagensFavoritas1) System.out.println(linguagem);
 
+        System.out.println();
+
         System.out.println("--------\tOrdem Natural: Nome\t--------");
         Set<LinguagemFavorita> minhasLinguagensFavoritas2 = new TreeSet<>(minhasLinguagensFavoritas);
         for (LinguagemFavorita linguagem : minhasLinguagensFavoritas2) System.out.println(linguagem);
+
+        System.out.println();
 
         System.out.println("--------\tOrdem IDE\t--------");
         Set<LinguagemFavorita> minhasLinguagensFavoritas3 = new TreeSet<LinguagemFavorita>(new ComparatorIde());
         minhasLinguagensFavoritas3.addAll(minhasLinguagensFavoritas);
         for (LinguagemFavorita linguagem : minhasLinguagensFavoritas3) System.out.println(linguagem);
 
+        System.out.println();
+
         System.out.println("--------\tOrdem Ano de Criacao e Nome\t--------");
         Set<LinguagemFavorita> minhasLinguagensFavoritas4 = new TreeSet<LinguagemFavorita>(new ComparatorAnoDeCriacaoENome());
         minhasLinguagensFavoritas4.addAll(minhasLinguagensFavoritas);
         for (LinguagemFavorita linguagem : minhasLinguagensFavoritas4) System.out.println(linguagem);
+
+        System.out.println();
 
         System.out.println("--------\tOrdem Nome - Ano de Criacao - IDE\t--------");
         Set<LinguagemFavorita> minhasLinguagensFavoritas5 = new TreeSet<LinguagemFavorita>(new ComparatorNomeAnoDeCriacaoIde());
