@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ExercicioProposto1 {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         List<Double> temperaturas = new ArrayList<Double>();
 
         //Adicionando as temperaturas na lista:
@@ -14,11 +14,11 @@ public class ExercicioProposto1 {
             if (count == 6) break;
 
             System.out.print("Digite a temperatura: ");
-            double temp = scan.nextDouble();
+            double temp = sc.nextDouble();
             temperaturas.add(temp);
             count++;
         }
-        System.out.println("-----------------");
+        System.out.println();
         
         //exibindo todas as temperaturas:
         System.out.print("Todas as temperaturas: ");
@@ -70,6 +70,6 @@ public class ExercicioProposto1 {
             }
             count++;
         }
-        scan.close();
+        sc.close();
     }
 }
